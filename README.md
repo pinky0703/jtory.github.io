@@ -1,1 +1,1 @@
-# special-jtory-study
+# jQuery학습 
