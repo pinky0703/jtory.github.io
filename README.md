@@ -41,7 +41,8 @@ IE DOM
   - .은 class selector
   - li와 같은 엘리먼트 태그명은 element selector
   - #jquery, #MYSQL 이런 형태는 다중 선택자 
-> jQuery API 
+  
+> jQuery API에 들어가면 더 다양한 선택자들에 관한 내용이 들어있음. 
 
 * Filter : 본인이 필요한 것을 찾기 위한 필터링
   - eq
@@ -51,8 +52,52 @@ IE DOM
   - odd : 짝수
   - first
   - last 
-  
+ * 속성 : [(속성이름)(기호) = **"속성값"**] 으로 표현
+   - *는 포함되는 엘리먼트 찾아냄 
+   - =는 일치하는 엘리먼트 찾아냄
+   - !=는 일치하지 않는 
+   - ^는 처음 등장하는
+   - $는 마지막으로 등장하는 
+   - [(속성이름)] 만 쓰면 속성이 존재하는 엘리먼트를 찾아냄
+   - [(속성이름)][id]를 쓰면 속성들이 존재하는 엘리먼트를 찾아냄
+   
 # chain 
+* jQuery의 메소드들은 반환값으로 자기 자신을 반환해야 한다는 규칙이 있음
+* 이를 이용하면 한번 선택한 대상에 대해서 연속적인 제어가 가능 
+```
+// 예제 1) jQuery를 이용해서 코딩하는 경우 ** 랩퍼를 따로 계속 선언해주지 않아도 된다는 장점!  
+<html>
+    <body>
+        <a id="tutorial" href="http://jquery.com" target="_self">jQuery</a>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            jQuery('#tutorial').attr('href', 'http://jquery.org').attr('target', '_blank').css('color', 'red'); //
+        </script>
+    </body>
+</html>
+
+// 예제 2) javascript의 DOM을 이용해서 코딩하는 경우
+<html>
+     <body>
+         <a id="tutorial" href="http://jquery.com" target="_self">jQuery</a>
+         <script type="text/javascript">
+             var tutorial = document.getElementById('tutorial'); 
+             tutorial.setAttribute('href', 'http://jquery.org'); // setAttribute : 속성값을 변경시켜주는. (속성의 이름, 속성의 값) -> jQuery에서 attr과 같은 역할 
+             tutorial.setAttribute('target', '_blank');
+             tutorial.style.color = 'red';
+         </script>
+     </body>
+ </html>
+```
+* chain의 장점 
+  - 코드가 간결해진다 
+  - 인간의 언어와 유사해서 사고의 자연스러운 과정과 일치함 
+  
+* 탐색(traversing)
+  - chain의 대상을 바꿔서 체인을 계속 연장시킬 수 있는 방법
+  - http://api.jquery.com/category/traversing/
+  - taeyo.net jQuery traverse 강좌
+  - 너무 복잡한 chain은 코드의 가독성을 떨어 뜨릴 수 있
 
 # event 
 
@@ -118,7 +163,7 @@ $("#go").click( function() {
                     borderWidth: "10px"
                 }, 3000); // animation 효과가 3초안에 끝난다 
 ``` 
-
+fail click to do again 
 # Ajax
 * Asynchronous JavaScript and XML 의 약자
 * 자바스크립트를 이용해서 비동기식으로 서버와 통신하는 방식. 이 때 XML을 이용한다.
