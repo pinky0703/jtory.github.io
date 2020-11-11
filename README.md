@@ -96,8 +96,12 @@ IE DOM
 * 탐색(traversing)
   - chain의 대상을 바꿔서 체인을 계속 연장시킬 수 있는 방법
   - http://api.jquery.com/category/traversing/
-  - taeyo.net jQuery traverse 강좌
-  - 너무 복잡한 chain은 코드의 가독성을 떨어 뜨릴 수 있
+  - http://www.taeyo.pe.kr/Columns/View.aspx?SEQ=375&PSEQ=29 강좌
+  - 너무 복잡한 chain은 코드의 가독성을 떨어 뜨릴 수 있음
+
+* end() : chain 컨텍스트를 유지하다가 이 메소드를 만나게 되면, 마지막으로 사용한 트레버스 취소 (탐색중지)
+- 하나의 컨텍스트에서 제어하고 싶은 항목 변경 가능
+- 경제적, 사고의 흐름도 연속적
 
 # event 
 
