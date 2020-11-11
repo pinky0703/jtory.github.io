@@ -104,8 +104,34 @@ IE DOM
 - 경제적, 사고의 흐름도 연속적
 
 # event 
-
-
+  - 시스템에서 일어나는 사건
+  - js 나 jQuery에게 이벤트란, 브라우저에서 일어나는 사건 (클릭, 마우스 이동, 타이핑, 페이지 로딩 등) 
+  - 이벤트가 발생했을 때 작동할 로직을 시스템에게 알려두면 이벤트가 발생했을 때 시스템이 그 로직을 호출 
+   
+  - 이벤트에 대한 기본적인 내용 js 이벤트편 참고: http://http//opentutorials.org/course/49%E2%80%8B
+  
+* jQuery의 이벤트
+  - 크로스브라우징의 문제를 해결해줌
+  - bind로 **이벤트 핸들러를 설치**하고, unbind로 **제거** (예제1)
+    - unbind할 경우에는 어떤 이벤트 핸들러인지 명확하게 명시한다 !
+  - trigger로 이벤트 핸들러를 강제로 실행 (예제2)
+    - 
+  - click, ready와 같이 다양한 이벤트 헬퍼(helper)를 제공함
+  - live를 이용하면 현재 존재 하지 않는 엘리먼트에 이벤트 핸들러를 설치할 수 있음
+  - 익명함수 : 이벤트를 위한 함수가 대부분 재활용이 되지 않기 때문에 
+  - 이벤트 헬퍼 
+  ```
+  $(document).ready(function(){ // 여기서 ready가 이벤트 헬퍼 : 이벤트헬퍼는 보다 더 경제적인 기능을 하기 위함 
+                 $('#click_me').click(clickHandler);
+                 $('#remove_event').click(function(e){
+                     $('#click_me').unbind('click', clickHandler);
+                 });
+                 $('#trigger_event').click(function(e){
+                     $('#click_me').trigger('click');
+                 });
+             })
+  ```
+  - live로도 이벤트 설치가 가능하다 
 # 엘리먼트 제어 
 
 
