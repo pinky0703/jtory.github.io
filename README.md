@@ -7,19 +7,37 @@
 
 
 ``` 코딩 표시 ```
+
 # jQuery란? 
+* 라이브러리란 ? 자주 사용하는 코드들을 재사용할 수 있는 형태로 가공해서 프로그래밍 효율을 높여주는 코드들 
+* jQuery 
+  - 엘리먼트를 선택하는 강력한 방법
+  - 선택된 엘리먼트들을 효율적으로 제어할 수 있는 다양한 수단을 제공하는 
+  - 자바스크립트 라이브러리 
+* jQuery 쓰는 방법 
+  - 직접 서비스 하는 경우: http://jquery.org 에서 jQuery 소스코드 다운로드 
+  - 구글의 자바스크립트 라이브러리를 사용하는 경우 : http://code.google.com/intl/ko-KR/apis/libraries/devguide.html#jquery
+  
+* jQuery 문법 
+* **$(제어대상).method1().method2();**
+* *-----주어---- ---------서술어--------*
+// 메소드가 리턴될 때, 메소드가 제어했던 대상을 리턴해준다 -> 꼬리에 꼬리를 물며 메소드를 붙일 수 있게 됨 <체인: jQuery의 중요한 특성>
+
 
 # javascript vs jQuery
+W3C DOM 
+IE DOM 
+
 # wrapper 
+* jQuery(엘리먼트 오브젝트 | 'CSS스타일 선택자') : js 에서 jQuery라는 함수를 호출한다는 의미 
 # 선택자
+
 # chain 
+
 # event 
 
 
-
 # 엘리먼트 제어 
-
-
 
 
 # 폼
