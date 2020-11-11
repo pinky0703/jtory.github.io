@@ -8,6 +8,7 @@
 
 ``` 코딩 표시 ```
 # jQuery란? 
+
 # javascript vs jQuery
 # wrapper 
 # 선택자
@@ -47,4 +48,16 @@ $
                 $("span").text("Not valid!").show().fadeOut(1000);
                 return false;
             });
-        </script> ``` 
+        </script> 
+```
+
+# 탐색 
+* 체인 컨텍스트를 유지하면서 제어의 대상이 되는 엘리먼트를 변경하는 기법 
+* Traversing 
+- end() : 이전 컨텍스트로 돌아간다 
+- filter() : 현재 엘리먼트 셋 안에서 가져오는거고
+- find()는 현재 선택된 엘리먼트 셋들의 자식엘리먼트 안에서 가져오는 것 
+ (filter보다 범주가 크다)
+- siblings() : 각각의 엘리먼트에 대한 다음 형제 엘리먼트 전부를 선택한다 
+ 
+
