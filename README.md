@@ -21,7 +21,7 @@ IE DOM
 
 # wrapper 
 * jQuery(엘리먼트 오브젝트 | 'CSS스타일 선택자') : js 에서 jQuery라는 함수를 호출한다는 의미, e.o 나 선택자를 인자로 넘겨준다 
-새로운 라이브러리가 들어왔을 때 충돌할 수도 있다. 그러한 충돌을 회피하기위해 제이쿼리의 중요한 장점이 있다 
+새로운 라이브러리가 들어왔을 때 충돌할 수도 있다. 그러한 충돌을 회피하기위해 제이쿼리의 중요한 장점이 다음고 같이 있다
 * 랩퍼의 안전한 사용
 1. $ 대신 jQuery를 사용 
 2. $를 함수의 지역변수로 선언해서 외부에 있을지 모르는 타 라이브러리의 $와의 충돌 예방 
@@ -33,8 +33,25 @@ IE DOM
 * 제어 대상을 지정하는 방법
   * jQuery( selector, [context] )
   * jQuery( element )
+  
 # 선택자
+* 래퍼 안의 인자 두개 중에서 'CSS선택자' 가 더 효과적으로 엘리먼트를 선택 할 수 있다. 
+* 기본 선택자
+  - #은 id selector
+  - .은 class selector
+  - li와 같은 엘리먼트 태그명은 element selector
+  - #jquery, #MYSQL 이런 형태는 다중 선택자 
+> jQuery API 
 
+* Filter : 본인이 필요한 것을 찾기 위한 필터링
+  - eq
+  - gt (greater than)
+  - lt (less than)
+  - even : 홀수
+  - odd : 짝수
+  - first
+  - last 
+  
 # chain 
 
 # event 
