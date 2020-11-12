@@ -133,6 +133,37 @@ IE DOM
   ```
   - live로도 이벤트 설치가 가능하다 
 # 엘리먼트 제어 
+* jQuery는 엘리먼트를 제어하는 일관되고 풍부한 기능들을 제공한다
+* http://api.jquery.com/category/manipulation/
+* 자식으로 삽입 
+  - append()
+  - appendTo()
+  - html()
+  - prepend()
+  - prependTo()
+  - text()
+* 형제로 삽입
+  - after()
+  - before()
+  - insertAfter()
+  - insertBefore()
+* 부모로 감싸기
+  - unwrap()
+  - wrap()
+  - wrapAll()
+  - wrapInner()
+* 삭제
+  - detach()
+  - empty()
+  - remove()
+  - unwrap()
+* 치환
+  - replaceAll()
+  - replaceWith()
+* 클래스
+  - addClass(), hasClass(), removeClass(), toggleClass()
+* 속성제어
+  - attr(), prop(), removeAttr(), removeProp(), val()
 
 
 # 폼
