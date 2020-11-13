@@ -5,7 +5,20 @@
   - $('*') : 전체 선택
   - $('h1,p') : 다중 선택자 
 
-# jQuery 함수 
+# jQuery 함수 ( arrow 함수 ) 
+```
+$('.btn-primary').click(function(e){
+  alert('ok');
+});
+
+// 이것을 아래와 같이 바꿀 수 있다
+$('.btn-primary').click()(e) => {
+  alert('ok');
+});
+//아래와 같이 더 축약할 수 있다 
+$('.btn-primary').click(e => alert('ok'));
+```
+
 
 # jQuery Bootstrap
 * bootstrap button 
